@@ -23,6 +23,7 @@ import MenuIcon from "@mui/icons-material/Menu"
 import { drawerMenu, popMenu } from '../../constants/menu'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
+import poke from '../../assets/images/poke.jpg'
 
 const drawerWidth = 240;
 
@@ -51,7 +52,7 @@ const PopMenu = () => {
                 onClick={() => setOpen(true)}
                 ref={menuRef}
             >
-                <Avatar sx={{ width: 32, height: 32 }}>A</Avatar>
+                <Avatar sx={{ width: 32, height: 32 }}><img  height={32} width={32} src={poke}/></Avatar>
             </IconButton>
             <MenuPopover open={open} onClose={() => setOpen(false)}
                 anchorEl={menuRef.current} sx={{
